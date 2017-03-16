@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PASCO</title>
+
+	<!--
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="font/montserrat.css">
+<link rel="stylesheet" href="font/materialIcons.css">
+<link rel="stylesheet" href="contentAdap.css">
+<link rel="stylesheet" href="adaptive.css">
+
+<link rel="stylesheet" href="footerAdap.css">
+-->
+
+<style>
+
+
+.body-page{
+position: relative;
+
+}
+
+.body-page__preloader{
+		background-color: #fff;
+		position: absolute;
+		bottom: 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+		z-index: 999999999999999;
+	}
+
+
+.preloader-rows {
+height: 45px;
+ width: 60px;
+ padding: 0;
+ text-align: center;
+ position: fixed;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ top: 0;
+ margin: auto;
+}
+.preloader-rows__item {
+  display: inline-block;
+  width: 8px;
+  height: 45px;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  -webkit-animation: colorbars 333ms alternate infinite cubic-bezier(0.2, 0, 0.5, 1);
+          animation: colorbars 333ms alternate infinite cubic-bezier(0.2, 0, 0.5, 1);
+}
+
+.one {
+  background: #2776b7;
+  border-radius: 3px 0 0 3px;
+   -webkit-animation-delay: 111ms;
+          animation-delay: 111ms;
+}
+
+.two {
+  background: #328fc5;
+  -webkit-animation-delay: 222ms;
+          animation-delay: 222ms;
+}
+
+.three {
+  background: #56b4d4;
+  -webkit-animation-delay: 333ms;
+          animation-delay: 333ms;
+}
+
+.four {
+  background: #61ca8c;
+  -webkit-animation-delay: 444ms;
+          animation-delay: 444ms;
+}
+
+.five {
+  background: #c5e9ae;
+  border-radius: 0 3px 3px 0;
+   -webkit-animation-delay: 555ms;
+          animation-delay: 555ms;
+}
+
+
+@-webkit-keyframes colorbars {
+  to {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+}
+
+@keyframes colorbars {
+  to {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+}
+
+
+
+
+
+</style>
+</head>
+
+                                                    
+<body class='body-page' id='body'>
+<div class="body-page__preloader">
+	<ul class="preloader-rows">
+		<li class="preloader-rows__item one" ></li>
+		<li class="preloader-rows__item two" ></li>
+		<li class="preloader-rows__item three" ></li>
+		<li class="preloader-rows__item four" ></li>
+		<li class="preloader-rows__item five" ></li>
+	</ul>
+</div>
+<header class="header">
+<section class="header__adap-version adap-panel">
+	<div class="adap-panel__adap-btn adap-btn">
+		<div class="adap-btn__item"></div>
+		<div class="adap-btn__item"></div>
+		<div class="adap-btn__item"></div>
+	</div>
+	<a href="" class="adap-panel__logo">PASCO</a>
+	<div class="adap-panel__cart shop-cart">
+		<i class=" fa fa-cart-arrow-down" aria-hidden="true"></i>
+		<div class="shop-cart__count">17</div>
+	</div>
+	
+</section>
+<section class="header__nav-top-line nav-top-line">
+	<div class="nav-top-line__content-zone nav-top">
+		<div class="nav-top__socis-block socis-block">
+			<a href="" class="socis-block__item socis socis_f"></a>
+			<a href="" class="socis-block__item socis  socis_tw"></a>
+			<a href="" class="socis-block__item socis socis_p"></a>
+			<a href="" class="socis-block__item socis  socis_vk"></a>
+			<a href="" class="socis-block__item socis  socis_g"></a>
+			<a href="" class="socis-block__item socis  socis_be"></a>
+			<a href="" class="socis-block__item socis  socis_lind"></a>
+			<a href="" class="socis-block__item socis  socis_instgr"></a>
+		</div>
+		<div class="nav-top__location-block location-block">
+					<div class="location-block__sing-in sing-in">SING IN</div>
+					<div class="location-block__lang lang">ENG
+					<div class="lang__arrow"></div></div>
+
+		</div>
+		
+	</div>
+</section>
+
+<section class="header__content-block header-content">
+	<div class="header-content__center header-full-content">
+	<div class="header-full-content__logo logo">
+		pasco
+	</div>
+	<ul class="header-full-content__main-menu main-menu"> 
+
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">HOME
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+	<li class="main-menu__item ">
+		<a href="" class="nav-menu-link">Portfolio
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">Blog
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">pages
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">shop
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">components
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">features
+		<span class="nav-menu-link__down"></span></a>
+	</li>
+
+	</ul>
+
+	<div class="header-full-content__search-like-block search-like-block ">
+		<div class="search-like-block__search-block search-block"></div>
+		<div class="search-like-block__like-block like-block"></div>
+		<div class="search-like-block__shop shop"></div>
+		
+	</div>
+
+	<div class="header-full-content__slider-block slider-content">
+		<h1 class="slider-content__title1">inspiration</h1>
+		<h1 class="slider-content__title2">5 Ways milllennials can start
+building their future today</h1>
+<div class="slider-content__btn-more btn-more">read more</div>
+
+	<div class="slider-content__person-block person-block">
+		<div class="person-block__avatar"></div>
+		<h1 class="person-block__name">Henry Little</h1>
+		<div class="person-block__date autor-date">
+			<div class="autor-date__calendar">Apri 28, 2016</div>
+			<div class="autor-date__time">10:15</div>
+		</div>
+					<div class="person-block__socis-info socis-info">
+						<p class="socis-info__comments comments">
+						Comments 
+							<span class="comments__count">(28)</span>
+							
+						</p>
+						<p class="socis-info__likes likes">
+						Likes 
+							<span class="likes__count">(07)</span>
+						</p>
+					</div>
+	</div>
+	</div>
+	</div>
+
+
+
+</section>
+</header>
+	
+
+<main class="main">
+
+<section class="main__nav-sort nav-sort-block">
+
+	<div class="nav-sort-block__center nav-sort-category">
+			<h1 class="nav-sort-category__title">sort blog:</h1>
+			<div class="nav-sort-category__adap-sort adap-sort-menu">
+				Sort blog
+
+				<div class="adap-sort-menu__open-btn"></div>
+			</div>
+
+			<ul class="nav-sort-category__menu sort-menu">
+					<li class="sort-menu__item ">
+						<a href="" class="sort-link">all</a>
+					</li>
+					<li class="sort-menu__item ">
+						<a href="" class="sort-link">photography</a>
+					</li>
+					<li class="sort-menu__item ">
+						<a href="" class="sort-link">lifestyle</a>
+					</li>
+					<li class="sort-menu__item ">
+						<a href="" class="sort-link">trip</a>
+					</li>
+					<li class="sort-menu__item ">
+						<a href="" class="sort-link">
+					inspiration</a>
+					</li>
+
+
+
+			</ul>
+		
+	</div>
+	
+
+</section>
+
+<section class="main__content content">	
+	<div class="content__center content-wrap">
+			<div class="content-wrap__post-contain post-contain">
+			<div class="content-wrap__right-bar right-bar">
+					<div class="right-bar__bcg"></div>
+
+					<div class="right-bar__search search-widget">
+							<input placeholder="Seach" type="text" class="search-widget__input">
+							<div class="search-widget__btn btn btn_search"></div>
+					</div>
+
+					<div class="right-bar__categories categories">
+						
+						<h1 class="categories__title title-block">categories</h1>
+						<ul class="categories__list categories-list">
+							<li class="categories-list__item"><a href="" class="cat-link">Photography</a></li>
+							<li class="categories-list__item"><a href="" class="cat-link">Illustration</a></li>
+							<li class="categories-list__item"><a href="" class="cat-link">Graphic Design</a></li>
+							<li class="categories-list__item"><a href="" class="cat-link">Web design</a></li>
+							<li class="categories-list__item"><a href="" class="cat-link">Videography</a></li>
+						</ul>
+					</div>
+
+					<div class="right-bar__subscribe subctibe">
+						<h1 class="subctibe__title title-block">subctibe</h1>
+						<form class="subctibe__form subctibe-form">
+								<label for="" class="subctibe-form__name-block subctibe-block">
+									Name
+									<input type="text" class="subctibe-block__input">
+								</label>
+								<label for="" class="subctibe-form__email-block subctibe-block">
+									Email
+									<input type="email" class="subctibe-block__input">
+								</label>
+								<input type='submit' class="subctibe-block_submit subscribe-submit" value='subscribe'></input>
+
+								<div class="subctibe-block__socis subscribe-socis">
+									<div class="subscribe-socis__title subscribe-socis-title">
+											<div class="subscribe-socis-title__line"></div>
+											<div class="subscribe-socis-title__or">or</div>
+									</div>
+
+									<div class="subscribe-socis__btn-s btn-s">
+									<div class="btn-s__btn btn btn_f"></div>
+									<div class="btn-s__btn btn btn_tw"></div>
+									<div class="btn-s__btn btn btn_vk"></div>
+									<div class="btn-s__btn btn btn_pin"></div>
+									<div class="btn-s__btn btn btn_tmbl"></div>
+									<div class="btn-s__btn btn btn_drbbl"></div>
+											
+									</div>
+									
+								</div>
+						</form>
+					</div>
+
+					<div class="right-bar__tab-post-widget post-widget">
+						<h1 class="post-widget__title title-block">tab post widget</h1>
+
+						<div class="post-widget__btn post-widget-btn">
+							<div class="post-widget-btn__recent-post">
+								recent post
+							</div>
+							<div class="post-widget-btn__popular-post post-widget-btn__popular-post_active">
+								popular post
+							</div>
+
+						</div>
+
+						<div class="post-widget__content post-widget-content">
+							<div class="post-widget-content__item post-widget-unit">
+								<img src="./image/autor.png" alt="" class="post-widget-unit__img">
+								<h3 class="post-widget-unit__date">April 28, 2016</h3>
+								<h1 class="post-widget-unit__title">Duis commodo elit sed nisi molestie</h1>
+									<div class="post-widget-unit__info post-widget-info">17</div>
+							</div>
+
+								<div class="post-widget-content__item post-widget-unit">
+								<img src="./image/autor.png" alt="" class="post-widget-unit__img">
+								<h3 class="post-widget-unit__date">April 28, 2016</h3>
+								<h1 class="post-widget-unit__title">Duis commodo elit sed nisi molestie</h1>
+									<div class="post-widget-unit__info post-widget-info">17</div>
+							</div>
+
+								<div class="post-widget-content__item post-widget-unit">
+								<img src="./image/autor.png" alt="" class="post-widget-unit__img">
+								<h3 class="post-widget-unit__date">April 28, 2016</h3>
+								<h1 class="post-widget-unit__title">Duis commodo elit sed nisi molestie</h1>
+									<div class="post-widget-unit__info post-widget-info">17</div>
+							</div>
+
+								<div class="post-widget-content__item post-widget-unit">
+								<img src="./image/autor.png" alt="" class="post-widget-unit__img">
+								<h3 class="post-widget-unit__date">April 28, 2016</h3>
+								<h1 class="post-widget-unit__title">Duis commodo elit sed nisi molestie</h1>
+									<div class="post-widget-unit__info post-widget-info">17</div>
+							</div>
+
+								<div class="post-widget-content__item post-widget-unit">
+								<img src="./image/autor.png" alt="" class="post-widget-unit__img">
+								<h3 class="post-widget-unit__date">April 28, 2016</h3>
+								<h1 class="post-widget-unit__title">Duis commodo elit sed nisi molestie</h1>
+									<div class="post-widget-unit__info post-widget-info">17</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="right-bar__tags tags">
+							<h1 class="tags__title title-block">tags</h1>
+							<div class="tags__contain-tag contain-tag">
+								<div class="contain-tag__tag">Photography</div>
+								<div class="contain-tag__tag">Webdesign</div>
+								<div class="contain-tag__tag">Illustration</div>
+							</div>
+					</div>
+			</div>
+
+			<div class="post-contain__posts posts">
+
+				<div class="post-contain__item post post_big">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">10 Things To Do To Change Your Life Forever</h1>
+							<p class="post-details__text">The one constant thing in our life is change. We cannot avoid it and the more we resist change the tougher our life becomes. I know this because I was very skilled at deflecting change in life.</p>
+						</div>
+						<div class="post__autor post-autor-panel">
+							<div class="post-autor-panel__autor-info autor-post-info">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+				<div class="post-contain__item post post_mini">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_mini">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel">
+							<div class="post-autor-panel__autor-info autor-post-info">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+
+				<div class="post-contain__item post post_mini">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_mini">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel">
+							<div class="post-autor-panel__autor-info autor-post-info">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+
+
+				<div class="post-contain__item post post_mini">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_mini">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel">
+							<div class="post-autor-panel__autor-info autor-post-info">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+
+
+				<div class="post-contain__item post post_mini">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_mini">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel">
+							<div class="post-autor-panel__autor-info autor-post-info">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item">			
+								</div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+
+				<div class="post-contain__tree-column tree-column">
+					<div class="tree-column__col post post_middle">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_middle">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel ">
+							<div class="post-autor-panel__autor-info autor-post-info_middle">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item">			
+								</div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+						<div class="tree-column__col post post_middle">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_middle">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel ">
+							<div class="post-autor-panel__autor-info autor-post-info_middle">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item">			
+								</div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+					<div class="tree-column__col post post_middle">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_middle">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel ">
+							<div class="post-autor-panel__autor-info autor-post-info_middle">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item">			
+								</div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+				</div>
+
+				<div class="post-contain__two-column two-column">		
+						<div class="two-column__col post post_middle">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_middle">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel ">
+							<div class="post-autor-panel__autor-info autor-post-info_middle">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item">			
+								</div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+
+				<div class="two-column__col post post_middle">
+						<div class="post__video-block post-video">
+							<div class="post-video__slogan">lifestyle</div>
+							<div class="post-video__socis post-socis">
+									<div class="post-socis__comment post-comment">7</div>
+									<div class="post-socis__likes post-likes">15</div>
+							</div>
+						</div>
+						<div class="post__details-content post-details">
+							<h1 class="post-details__title">4 Natural Ways To Have Young Skin</h1>
+							<p class="post-details__text post-details__text_middle">Lorem ipsum dolor sit amet, to consectetur  adipi scing elit. Nulla vehicula lorem and lacus. Vestibulum vitae mauris lorem ipsum doar. </p>
+						</div>
+						<div class="post__autor post-autor-panel ">
+							<div class="post-autor-panel__autor-info autor-post-info_middle">
+								<div class="autor-post-info__avatar"></div>
+								<h1 class="autor-post-info__name">Henry Little</h1>
+								<div class="autor-post-info__date autor-date">
+									<div class="autor-date__calendar">Apri 28, 2016</div>
+									<div class="autor-date__time">10:15</div>
+								</div>
+							</div>
+
+							<div class="post-autor-panel__menu menu-btn">
+								<div class="menu-btn__item">			
+								</div>
+								<div class="menu-btn__item"></div>
+								<div class="menu-btn__item"></div>
+							</div>
+							
+						</div>
+				</div>
+
+
+
+
+				</div>
+				<div class="post-contain__more-btn more-btn">
+				<h1 class="more-btn__title">More</h1>
+				<div class="more-btn__touch btn btn_arrow"></div>
+			</div>
+			</div>
+
+				</div>
+	
+</div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+	<section class="footer__instagramm footer-instagramm">
+	<img src='image/instgr1.png' class="footer-instagramm__item"></img>
+	<img src='image/instgr.png' class="footer-instagramm__item"></img>
+	<img src='image/instgr2.png' class="footer-instagramm__item"></img>
+		<img src='image/instgr1.png' class="footer-instagramm__item"></img>
+	<img src='image/instgr.png' class="footer-instagramm__item"></img>
+	<img src='image/instgr2.png' class="footer-instagramm__item"></img>
+	<img src='image/instgr.png' class="footer-instagramm__item"></img>
+	<img src='image/instgr2.png' class="footer-instagramm__item"></img>
+	</section>
+
+	<section class="footer__subscribe footer-subscribe">
+			<div class="footer-subscribe__center footer-subscribe-content">
+				<div class="footer-subscribe-content__form footer-subscribe-form">
+					<h1 class="footer-subscribe-form__title">Subscribe to our newsletter</h1>
+					<input placeholder='Email Adress' type="text" class="footer-subscribe-form__input">
+					<div class="footer-subscribe-form__btn">subscribe</div>
+				</div>
+				
+
+			</div>
+	</section>
+
+	<section class="footer__socis-content socis-content">
+		<div class="socis-content__center footer-content">
+				<div class="footer-content__col footer-col">
+					<h1 class="footer-col__title">pages widget</h1>
+					<div class="pages-widget">
+						<div class="pages-widget__page">
+							<a href="" class="widget-page-link">
+							home
+								<span class="widget-page-link__add"></span>
+							</a>
+						</div>
+						<div class="pages-widget__page">
+							<a href="" class="widget-page-link">
+							pages
+								<span class="widget-page-link__add"></span>
+							</a>
+						</div>
+						<div class="pages-widget__page">
+							<a href="" class="widget-page-link">
+							portfolio
+								<span class="widget-page-link__add"></span>
+							</a>
+						</div>
+						<div class="pages-widget__page">
+							<a href="" class="widget-page-link">
+							blog
+								<span class="widget-page-link__add"></span>
+							</a>
+						</div>
+
+						<div class="pages-widget__page">
+							<a href="" class="widget-page-link">
+							shop
+								<span class="widget-page-link__add"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-content__col footer-col">
+					<h1 class="footer-col__title">pages widget</h1>
+					<div class="footer-col__twetter-widget twitter-widget">
+							<div class="twitter-widget__twet twet">
+								<div class="twet__img"></div>
+								<h1 class="twet__title">@PASCO, Duis commodo elit sed nisi molestie</h1>
+							
+						<div class="twet__date twet-date">
+							<div class="twet-date__time">2 hours ago</div>
+							<div class="twet-date__arrow">→</div>
+							<div class="twet-date__reoly">Reply</div>
+							<div class="twet-date__retwet">Retweet</div>
+							<div class="twet-date__favorite">Favorite</div>
+						</div>
+						</div>
+
+						<div class="twitter-widget__twet twet">
+								<div class="twet__img"></div>
+								<h1 class="twet__title">@PASCO, Duis commodo elit sed nisi molestie</h1>
+							
+						<div class="twet__date twet-date">
+							<div class="twet-date__time">2 hours ago</div>
+							<div class="twet-date__arrow">→</div>
+							<div class="twet-date__reoly">Reply</div>
+							<div class="twet-date__retwet">Retweet</div>
+							<div class="twet-date__favorite">Favorite</div>
+						</div>
+						</div>
+
+
+						<div class="twitter-widget__twet twet">
+								<div class="twet__img"></div>
+								<h1 class="twet__title">@PASCO, Duis commodo elit sed nisi molestie</h1>
+							
+						<div class="twet__date twet-date">
+							<div class="twet-date__time">2 hours ago</div>
+							<div class="twet-date__arrow">→</div>
+							<div class="twet-date__reoly">Reply</div>
+							<div class="twet-date__retwet">Retweet</div>
+							<div class="twet-date__favorite">Favorite</div>
+						</div>
+						</div>
+
+
+						<div class="twitter-widget__twet twet">
+								<div class="twet__img"></div>
+								<h1 class="twet__title">@PASCO, Duis commodo elit sed nisi molestie</h1>
+							
+						<div class="twet__date twet-date">
+							<div class="twet-date__time">2 hours ago</div>
+							<div class="twet-date__arrow">→</div>
+							<div class="twet-date__reoly">Reply</div>
+							<div class="twet-date__retwet">Retweet</div>
+							<div class="twet-date__favorite">Favorite</div>
+						</div>
+						</div>
+					</div>
+
+					<div class="footer-col__socis twet-socis">
+						<h1 class="twet-socis__title footer-col-title">social widget</h1>
+						<div class="twet-socis__social-block btn-s">
+									<div class="btn-s__btn btn btn_f"></div>
+									<div class="btn-s__btn btn btn_tw"></div>
+									<div class="btn-s__btn btn btn_vk"></div>
+									<div class="btn-s__btn btn btn_pin"></div>
+									<div class="btn-s__btn btn btn_tmbl"></div>
+									<div class="btn-s__btn btn btn_drbbl"></div>
+											
+									</div>
+					</div>
+
+			
+				</div>
+						<div class="footer-content__col footer-col ">
+					<h1 class="footer-col__title">flickr widget</h1>
+					<div class="footer-col__flirckr-widget flirckr-widget">
+						<img src="./image/flickr-foto.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto1.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto3.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto1.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto3.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto1.png" alt="" class="flirckr-widget__foto">
+						<img src="./image/flickr-foto3.png" alt="" class="flirckr-widget__foto">
+					</div>
+
+
+					</div>
+				<div class="footer-content__col news-latter">
+							<h1 class="footer-col__title">news-letter</h1>
+							<form action="" class="news-latter-form">
+								<input placeholder="Name" type="text" class="news-latter-form__input">
+								<input placeholder="Email Adress" type="email" class="news-latter-form__input">
+								<textarea  placeholder="Message" class="news-latter-form__message">
+								</textarea>
+
+								<input value="subscribe" class="news-latter-form__submit" type="submit">
+							</form>
+
+
+				</div>
+
+		</div>
+	</section>
+
+	<section class="footer-bootom">
+		<div class="footer-bootom__center footer-bootom-content">
+			<ul class="footer-bootom-content__menu main-menu"> 
+ 
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">HOME
+		</a>
+	</li>
+	<li class="main-menu__item ">
+		<a href="" class="nav-menu-link">Portfolio
+		</a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">Blog
+		</a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">pages
+		</a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">shop
+		</a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">components
+		</a>
+	</li>
+	<li class="main-menu__item">
+		<a href="" class="nav-menu-link">features
+		</a>
+	</li>
+
+	</ul>
+	<label for="" class="footer-bootom-content__search footer-search">
+				<input type="text" placeholder="Search" class="footer-search__inp">
+	</label>
+
+		</div>
+	</section>
+
+</footer>
+
+
+
+
+</body>
+<script type='text/javascript' src="dist/bundle.js"></script>
+</html> 
